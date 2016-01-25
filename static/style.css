@@ -1,9 +1,36 @@
-h1, h3, p, t {
-	font-family: sans-serif;
+h1, h3, p, t 
+{
 	color: white;
-	}
+}
 
-body {
+h1, h3 
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+}
+
+p, t 
+{
+	font-family: 'Open Sans', sans-serif;
+}
+	
+body 
+{
 	background-color: black;
-	}
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
+.samButton
+{
+	margin-left: auto; margin-right: auto;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid white;
+	display: inline-block;
+	padding: 0px;
+	padding-top: 1px;
+	padding-bottom: 0px;
+	font: sans-serif;
+}

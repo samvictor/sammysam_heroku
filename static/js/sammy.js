@@ -10,7 +10,7 @@ for(var i = 0; i < samButtons.length; i++)
 	
 	samButtons[i].onmouseover = function()
 	{
-	    this.style.backgroundColor = '#20004b';
+	    this.style.backgroundColor = '#300768';
 	    this.style.color = 'white';
 	};
 	samButtons[i].onmouseout = function()

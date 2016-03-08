@@ -3,9 +3,6 @@ var samButtons = document.getElementsByClassName("samButton");
 
 for(var i = 0; i < samButtons.length; i++)
 {
-	
-	
-	
 	samButtons[i].onclick = function()
 	{
 	    document.location.href=this.getAttribute("href");
@@ -13,7 +10,7 @@ for(var i = 0; i < samButtons.length; i++)
 	
 	samButtons[i].onmouseover = function()
 	{
-	    this.style.backgroundColor = '#40008b';
+	    this.style.backgroundColor = '#20004b';
 	    this.style.color = 'white';
 	};
 	samButtons[i].onmouseout = function()
@@ -22,3 +19,12 @@ for(var i = 0; i < samButtons.length; i++)
 	    this.style.color = '';
 	};
 }
+
+
+	
+// carousel controls
+$('#showcase_carousel').carousel({
+	interval: 8000
+    
+});
+	

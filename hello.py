@@ -15,4 +15,17 @@ def hello():
 
 
 if __name__ == '__main__':
-    app.run()
+	# start server
+	import SimpleHTTPServer
+	import SocketServer
+
+	PORT = 5000
+	HOST = ""
+	Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
+	httpd = SocketServer.TCPServer((HOST, PORT), Handler)
+
+	print "serving at port", PORT
+	httpd.serve_forever()
+	quit()
+	
+	#app.run()

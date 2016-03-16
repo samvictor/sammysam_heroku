@@ -24,7 +24,27 @@ for(var i = 0; i < samButtons.length; i++)
 	
 // carousel controls
 $('#showcase_carousel').carousel({
-	interval: 8000
+	interval: 6000,
+	pause: "no"
     
 });
 	
+var carousel_paused = false
+function PauseClicked(id)
+{
+	if (carousel_paused)
+	{
+		carousel_paused = false
+		id.innerHTML = "Pause <span class='glyphicon glyphicon-pause' aria-hidden='true'></span>"
+		$('#showcase_carousel').carousel('cycle');
+		$('#showcase_carousel').carousel('next');
+	}
+	else
+	{
+		carousel_paused = true
+		id.innerHTML = "Play <span class='glyphicon glyphicon-play' aria-hidden='true'></span>";
+		id.innerHTML = "Play <span class='glyphicon glyphicon-play' aria-hidden='true'></span>";
+		$('#showcase_carousel').carousel('pause');
+	}
+	
+}

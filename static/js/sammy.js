@@ -48,3 +48,28 @@ function PauseClicked(id)
 	}
 	
 }
+
+
+// Modal control
+var info_modal = document.getElementById('info_modal');
+var info_button = document.getElementById("info_button");
+var close_modal = document.getElementById("close_modal");
+
+// When the user clicks on the button, open the modal 
+info_button.onclick = function() {
+    info_modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+close_modal.onclick = function() {
+    info_modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == info_modal) {
+        info_modal.style.display = "none";
+    }
+}
+//$("div.modal-bg").fadeTo("slow", .5);
+

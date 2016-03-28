@@ -68,28 +68,30 @@
 	  </div>
 	  
 	  <div class="col-sm-2">
-		<div class='samButton' id="info_button" href="#" style="width: 100%">
+		<div class='samButton' id="info_button" href="#" style="width: 100%" data-toggle="modal" data-target="#info_modal">
 		  <p>Contact Info</p>
 		</div>
 	  </div>
 	</div>
 	
 	<!-- The Modal -->
-	<div id="info_modal" class="modal">
+	<div id="info_modal" class="modal fade" role="dialog">
+	
+	  <div class="modal-dialog">
 
-	  <!-- Modal content -->
-	  <div class="modal-content">
-		<div class="modal-header">
-			<h3 style="display:inline;">Contact Info</h3>
-			<span class="close" id="close_modal">x</span>
-		</div>
+		<!-- Modal content-->
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">Contact Info</h4>
+		  </div>
 		  <div class="modal-body">
 			<p>Email: sjinniss1@hotmail.com</p>
 		  </div>
-	  </div>
+		</div>
 
+	  </div>
 	</div>
-	<!--div class="modal-bg"></div-->
 	
 	<div class = "hidden-xs">
 		<h1 style="text-align: center">Sam's Website</h1>	

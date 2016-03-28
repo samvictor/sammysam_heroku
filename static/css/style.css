@@ -59,61 +59,19 @@ body
 
 .modal-body p {color: black; margin: 0;}
 
-.modal-content {
-    position: relative;
-    background-color: #fff;
-    margin: auto;
-   /*position: absolute;*/
-   /*left: 10%;
-   top: 50%;*/
-   /*margin-left: -150px;*/
-   margin-top: 6em;
-    padding: 0;
-    border: 1px solid #444;
-    width: 50%;
-    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.5),6px 6px 20px 0 rgba(0,0,0,0.4);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
-}
-
-@-webkit-keyframes animatetop {
-    from {top: -300px; opacity: 0} 
-    to {top: 0; opacity: 1}
-}
-
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
-
-.close {
-    color: white;
-    /*float: right;*/
-    font-size: 20px;
+button.close {
+    color: #fff;
     font-weight: lighter;
 	font-family: sans-serif;
+	font-size: 2em;
 	opacity: .5;
+	margin: 0;
+	text-shadow: 0px 2px 4px #000000;
 }
 
-.close:hover,
-.close:focus {
+button.close:hover,
+button.close:focus {
     opacity: .9;
-	color: white;
+	color: #fff;
     cursor: pointer;
-}
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    /*padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }

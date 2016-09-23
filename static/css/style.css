@@ -46,6 +46,10 @@ body
 	margin: 1em;
 }
 
+.samButton t {
+	margin: 10px;
+}
+
 
 /* Modal Stuff */
 .modal-header {

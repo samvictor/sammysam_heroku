@@ -38,6 +38,7 @@ body
 	padding-top: 1px;
 	padding-bottom: 0px;
 	font: sans-serif;
+	transition: background-color .5s
 }
 
 .samButton p

@@ -75,3 +75,11 @@ button.close:focus {
 	color: #fff;
     cursor: pointer;
 }
+
+.carousel-inner {
+	transition: height 1s;
+	-o-transition: height 1s;
+	-webkit-transition: height 1s;
+	-moz-transition: height 1s;
+}
+

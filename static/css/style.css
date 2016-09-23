@@ -42,9 +42,10 @@ body
 	min-height: 39px;
 }
 
-.samButton p
+.samButton p, .samButton h4
 {
 	margin: 10px;
+	height: 19px;
 }
 
 

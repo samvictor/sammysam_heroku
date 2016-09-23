@@ -40,17 +40,13 @@ body
 	font: sans-serif;
 	transition: background-color .3s;
 	min-height: 39px;
-	vertical-align: middle;
 }
 
 .samButton p
 {
-	margin: 1em;
-}
-
-.samButton t {
 	margin: 10px;
 }
+
 
 
 /* Modal Stuff */

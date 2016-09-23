@@ -1,18 +1,18 @@
 @import url("bootstrap.min.css");
 
-h1, h3, p, t 
+h1, h2, h3, h4, h5, h6, p, t, body
 {
 	color: white;
 }
 
 
-h1, h3 
+h1, h2, h3, h4, h5, h6 
 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: normal;
 }
 
-p, t 
+p, t, body 
 {
 	font-family: 'Open Sans', sans-serif;
 }

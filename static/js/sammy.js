@@ -26,8 +26,12 @@ for(var i = 0; i < samButtons.length; i++)
 $('#showcase_carousel').carousel({
 	interval: 6000,
 	pause: "no"
-    
+}).on('slide.bs.carousel', function (e)
+{
+    var nextH = $(e.relatedTarget).height();
+    $(this).find('.active.item').parent().animate({ height: nextH }, 500);
 });
+
 	
 var carousel_paused = false
 function PauseClicked(id)
@@ -46,6 +50,4 @@ function PauseClicked(id)
 		id.innerHTML = "Play <span class='glyphicon glyphicon-play' aria-hidden='true'></span>";
 		$('#showcase_carousel').carousel('pause');
 	}
-	
 }
-
